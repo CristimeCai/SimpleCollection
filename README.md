@@ -6,6 +6,7 @@
 依赖：pygame
 
 Github: https://github.com/CristimeCai/SimpleCollection
+
 Gitee: https://gitee.com/cristime/SimpleCollection
 
 ## 安装
