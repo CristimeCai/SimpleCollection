@@ -8,7 +8,7 @@ from . import gettime
 from . import calculator
 from . import gettime
 from . import coderain
-
+from . import snake
 # Windows 和 *nix 系统的清屏
 ClearWindow_win = r"cls"
 ClearWindow_linux = r"clear"
@@ -74,5 +74,4 @@ def Coderain():
 
 # 小游戏：使用 Pygame 实现贪吃蛇（摘自 https://gitee.com/libao-sir/snake/blob/master/snake_game.py）
 def Snake():
-    import snake
     snake.main()
