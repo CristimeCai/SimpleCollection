@@ -1,6 +1,6 @@
 # python 实现代码雨 摘自 https://blog.csdn.net/qq_39687901/article/details/83546363
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# Software: Visual Studio Code
 
 def rain():
     import random
@@ -12,7 +12,7 @@ def rain():
     
     winSur = pygame.display.set_mode((640, 480))
     
-    font = pygame.font.SysFont("fangsong", 20)
+    font = pygame.font.SysFont("", 20)
     
     bg_suface = pygame.Surface((640, 480), flags=pygame.SRCALPHA)
     

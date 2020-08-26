@@ -1,5 +1,5 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# Software: Visual Studio Code
 
 x = ""
 y = ""
@@ -74,5 +74,3 @@ def work():
     
     else:
         raise Exception('Undefined operator!')
-
-calc()

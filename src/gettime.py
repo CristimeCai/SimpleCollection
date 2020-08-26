@@ -1,8 +1,7 @@
-# 获取当前时间
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# Software: Visual Studio Code
 
 def time():
     import time
     localtime = time.asctime( time.localtime(time.time()) )
-    print ("本地时间为 :", localtime)
+    print ("TIME :", localtime)
