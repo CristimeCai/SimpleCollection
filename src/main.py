@@ -16,7 +16,7 @@ ClearWindow_linux = r"clear"
 
 def main():
     # 目录不存在，第一次运行
-    if os.path.exists("../Data") == False:
+    if os.path.exists("Data") == False:
         FirstRun()
     
     if platform.system() == "Windows":
@@ -47,7 +47,7 @@ def main():
 
 def FirstRun():
     # 确保之后不再运行
-    os.mkdir("../Data")                # 建立 Data 文件夹
+    os.mkdir("Data")                # 建立 Data 文件夹
 
     # 简单教程
     # Help(0)
