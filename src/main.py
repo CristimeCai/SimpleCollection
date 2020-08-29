@@ -26,7 +26,8 @@ def main():
     
     command = ''
     while True:
-        command = input("Command: ")
+        print(os.getcwd())
+        command = input(">>> ")
         
         if command == "help":
             Help(1)
@@ -40,6 +41,8 @@ def main():
             Snake()
         elif command == "quit" or command == "exit":
             break
+        elif command == "chdir":
+            Changedir()
         else:
             os.system(command)
 
@@ -75,3 +78,14 @@ def Coderain():
 # 小游戏：使用 Pygame 实现贪吃蛇（摘自 https://gitee.com/libao-sir/snake/blob/master/snake_game.py）
 def Snake():
     snake.main()
+
+# 更改当前目录
+def Changedir():
+    path = input("Type the directory that you want to change: ")
+    
+    try:
+        os.chdir(path)
+    except Exception as e:
+        print("An error occured: ", e)
+    
+    print("Change path successfully!\n")
