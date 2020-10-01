@@ -1,7 +1,7 @@
-# SimpleCollection
+# SimpleShell
 
 ## 介绍
-这是一个简单的 Shell 终端，可以输入内置命令和系统命令。
+这是一个简单的 Shell，可以输入内置命令和系统命令。
 
 依赖：pygame
 
