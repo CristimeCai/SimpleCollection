@@ -13,6 +13,7 @@ from . import snake
 ClearWindow_win = r"cls"
 ClearWindow_linux = r"clear"
 
+thisdir = ""
 
 def main():
     # 目录不存在，第一次运行
@@ -24,11 +25,18 @@ def main():
     else:
         os.system(ClearWindow_linux)
     
+    thisdir = os.getcwd()
+
     command = ''
+    
     while True:
         print(os.getcwd())
         command = input(">>> ")
         
+        file = open(thisdir+"/Data/.simpleshrc", "a")
+        file.write(command + '\n')
+        file.close()
+
         if command == "help":
             Help(1)
         elif command == "calculator":
@@ -51,6 +59,8 @@ def main():
 def FirstRun():
     # 确保之后不再运行
     os.mkdir("Data")                # 建立 Data 文件夹
+    file = open("Data/.simpleshrc", "w")
+    file.close()
 
     # 简单教程
     # Help(0)
