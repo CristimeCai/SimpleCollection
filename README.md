@@ -38,6 +38,9 @@ Tip: 在程序中输入 "help" 即可查看帮助文档。
 ### V0.1 Release
 * 修复系统 cd 命令不生效的问题
 
+### V0.1.1 Release
+* 增加历史记录功能（./Data/.simpleshrc）
+* 修复因使用 chdir 命令而发生异常的问题
 
 ## 写在后面
 作者：CristimeCai
